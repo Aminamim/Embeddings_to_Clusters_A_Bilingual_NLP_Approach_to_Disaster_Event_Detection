@@ -129,21 +129,6 @@ Only high-confidence matches surface — keeping false positives in check.
 
 > Plus generalized tags: **Disaster** (ambiguous / multi-hazard) and **Non-Disaster** (metaphor, opinion, or unrelated).
 
----
-
-## 📊 Results
-
-Evaluated using **Precision, Recall, F1-Score, and Accuracy** across all 20 categories on a held-out 20% test set.
-
-| Category | Precision | Recall | F1-Score | Accuracy |
-|---|:---:|:---:|:---:|:---:|
-| Specific Disaster | — | — | — | — |
-| Disaster (general) | — | — | — | — |
-| Non-Disaster | — | — | — | — |
-| **Overall** | — | — | — | — |
-
-> *Final metrics will be updated upon publication.*
-
 
 ---
 
@@ -152,13 +137,14 @@ Evaluated using **Precision, Recall, F1-Score, and Accuracy** across all 20 cate
 ```
 bilingual-disaster-detection/
 ├── data/
-│   ├── dataset.csv              # Annotated bilingual corpus
-│   └── raw/                     # Crawled news articles
+│   └── dataset.csv              # annotated bilingual corpus
 ├── docs/
-│   ├── research_proposal        # Proposed theory
+│   ├── research_proposal        # proposed theory
 ├── models/
 │   ├── index.faiss
 │   └── index.pkl
+├── src/
+│   └── bert_faiss.py           # proposed structure
 ├── results/
 │   └── metrics.json
 ├── requirements.txt
